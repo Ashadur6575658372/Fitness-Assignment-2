@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: black
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=My+Soul&display=swap');
+
+
+.my-soul-regular {
+  font-family: "My Soul", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.inter-regular {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+/* Shared Styles */
+.display-flex{
+    display: flex ;
+}
+
+
+/* NavBar Style */
+.navbar {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.brand {
+  font-weight: bolder;
+  cursor: pointer;
+  color: #E6533C;
+  font-size: 2.25rem;
+}
+.nav-links {
+  gap: 34px;
+  border: 1px solid #ffffff49;
+  padding: 12px;
+  padding-left: 4px;
+  border-radius: 46px;
+}
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 1.125rem;
+  color: #ffff;
+  text-decoration: none;
+}
+#home{
+    background-color: #E6533C;
+    padding: 8px 20px;
+    border-radius: 46px;
+}
