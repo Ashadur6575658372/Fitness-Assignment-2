@@ -1,22 +1,19 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: black
+body {
+  margin: 0 auto;
+  background-color: black;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=My+Soul&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=My+Soul&display=swap");
 
 .my-soul-regular {
   font-family: "My Soul", cursive;
   font-weight: 400;
   font-style: normal;
 }
-
 
 .inter-regular {
   font-family: "Inter", sans-serif;
@@ -25,23 +22,32 @@ body{
   font-style: normal;
 }
 
-
 /* Shared Styles */
-.display-flex{
-    display: flex ;
+.display-flex {
+  display: flex;
 }
 
-
 /* NavBar Style */
+.header {
+  background: linear-gradient(
+    to bottom,
+    #111111 0%,
+    #272727 50%,
+    #272727 50%,
+    #111111 100%
+  );
+}
 .navbar {
+  width: 1440px;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
-  margin-top: 50px;
+  padding-top: 50px;
 }
 .brand {
   font-weight: bolder;
   cursor: pointer;
-  color: #E6533C;
+  color: #e6533c;
   font-size: 2.25rem;
 }
 .nav-links {
@@ -60,8 +66,228 @@ body{
   color: #ffff;
   text-decoration: none;
 }
-#home{
-    background-color: #E6533C;
-    padding: 8px 20px;
-    border-radius: 46px;
+#home {
+  background-color: #e6533c;
+  padding: 8px 20px;
+  border-radius: 46px;
+}
+
+/* Banner Style */
+.banner {
+  width: 1440px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 100px;
+  gap: 530px;
+}
+
+.banner-content {
+  max-width: 550px;
+}
+.banner-title {
+  font-size: 4.875rem;
+  color: #ffffff;
+  font-weight: bolder;
+  margin-bottom: 28px;
+}
+#change-font {
+  font-family: "My Soul", cursive;
+  font-weight: 400;
+  font-style: italic;
+}
+.banner-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 28px;
+}
+.join-btn {
+  font-size: 1.125rem;
+  color: #ffffff;
+  background-color: #e6533c;
+  border: none;
+  padding: 16px 45px;
+  border-radius: 42px;
+  cursor: pointer;
+  margin-right: 14px;
+}
+.download-btn {
+  font-size: 1.125rem;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  padding: 16px 45px;
+  border-radius: 42px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid white;
+}
+
+.banner-image {
+  width: 100%;
+  z-index: 1;
+}
+.workout-btn-1 {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  z-index: 2;
+}
+.btn-circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #e6533c;
+}
+.workout-btn-2 {
+  background-color: rgba(48, 48, 48, 0.54);
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  z-index: 2;
+  backdrop-filter: blur(30px);
+  padding: 12px 20px;
+  align-items: center;
+  gap: 10px;
+  text-align: start;
+}
+.workout-btn-title {
+  margin-bottom: 5px;
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.workout-btn-description {
+  font-size: 0.813rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.banner-image-container {
+  position: relative;
+}
+
+.workout-btn-1 {
+  position: absolute;
+  right: -35px;
+  top: 145px;
+}
+
+.workout-btn-2 {
+  position: absolute;
+  left: -60px;
+  bottom: 60px;
+}
+
+
+
+
+/* Change Your Habits Section Style */
+.change-habits-section {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+.change-habits-info{
+  justify-items: center;
+  text-align: center;
+  max-width: 476px;
+  margin: 0 auto;
+}
+.change-habits-title{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+.change-habits-description{
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+  margin-bottom: 58px;
+}
+.change-habits-card{
+  justify-content: space-evenly;
+}
+.card-box{
+  width: 230px;
+  align-items: center;
+  text-align: center;
+}
+.card-img{
+  border-radius: 50%;
+}
+.change-habits-card{
+  font-size:1.125rem;
+  color:#FFFFFF;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+.change-habits-card-description{
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 353px;
+  }
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    max-width: 353px;
+  }
+  .banner-title {
+    font-size: 2.25rem;
+  }
+  .banner-btn {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .nav-links {
+    display: none;
+  }
+  .workout-btn-1 {
+    position: absolute;
+    right: -11px;
+    top: 145px;
+  }
+  .workout-btn-2 {
+    position: absolute;
+    left: 1px;
+    bottom: 60px;
+  }
+  .workout-btn-2 {
+    position: absolute;
+    left: 1px;
+    bottom: 60px;
+  }
+  .workout-btn-2 {
+    position: absolute;
+    left: 1px;
+    bottom: 60px;
+  }
+  /* Change Your Habits Section Style */
+  .change-habits-card{
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .change-habits-info{
+    max-width: 318px;
+  }
+  .change-habits-title{
+    font-size:2rem ;
+  }
 }
