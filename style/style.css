@@ -49,6 +49,10 @@ body {
   cursor: pointer;
   color: #e6533c;
   font-size: 2.25rem;
+  transition: transform 0.3s ease;
+}
+.brand:hover {
+  transform: scale(1.1);
 }
 .nav-links {
   gap: 34px;
@@ -57,6 +61,7 @@ body {
   padding-left: 4px;
   border-radius: 46px;
 }
+
 .nav-item {
   list-style: none;
 }
@@ -66,10 +71,17 @@ body {
   color: #ffff;
   text-decoration: none;
 }
+.nav-link:hover{
+  color: #e6533c;
+  
+}
 #home {
   background-color: #e6533c;
   padding: 8px 20px;
   border-radius: 46px;
+}
+#home:hover{
+  background-color: #222222;
 }
 
 /* Banner Style */
@@ -180,121 +192,121 @@ body {
   bottom: 60px;
 }
 
-
-
-
 /* Change Your Habits Section Style */
 .change-habits-section {
   max-width: 1060px;
   margin: 0 auto;
   margin-top: 100px;
 }
-.change-habits-info{
+.change-habits-info {
   justify-items: center;
   text-align: center;
   max-width: 476px;
   margin: 0 auto;
 }
-.change-habits-title{
+.change-habits-title {
   font-size: 3rem;
   font-weight: bolder;
   color: #ffffff;
   margin-bottom: 14px;
 }
-.change-habits-description{
+.change-habits-description {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.5;
   margin-bottom: 58px;
 }
-.change-habits-card{
+.change-habits-card {
   justify-content: space-evenly;
 }
-.card-box{
+.card-box {
   width: 230px;
   align-items: center;
   text-align: center;
 }
-.card-img{
+.card-img {
   border-radius: 50%;
 }
-.change-habits-card{
-  font-size:1.125rem;
-  color:#FFFFFF;
+.change-habits-card {
+  font-size: 1.125rem;
+  color: #ffffff;
   margin-top: 20px;
   margin-bottom: 6px;
 }
-.change-habits-card-description{
+.change-habits-card-description {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
 }
 
 /* Run an Extra Mile Easily Section Style */
-.run-extra-section{
+.run-extra-section {
   width: 1060px;
   margin: 0 auto;
   background-color: #222222;
   border-radius: 18px;
 }
-.run-extra-container{
+.run-extra-container {
   align-items: center;
   justify-content: space-between;
   margin-top: 130px;
   margin-bottom: 100px;
 }
-.run-extra-info{
+.run-extra-info {
   max-width: 443px;
   padding: 40px 54px;
 }
-.run-extra-title{
+.run-extra-title {
   font-size: 3rem;
   font-weight: bolder;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 14px;
 }
-.run-extra-description{
+.run-extra-description {
   font-size: 0.875rem;
   color: rgba(255, 255, 255, 0.5);
   margin-bottom: 34px;
+  line-height: 1.5;
 }
-.join-now-btn{
+.join-now-btn {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: #e6533c;
-  padding:16px 70px;
+  padding: 16px 70px;
   border: none;
   border-radius: 42px;
   cursor: pointer;
 }
-.run-extra-img{
+.run-extra-img {
   padding: 30px 32px;
 }
-.run-extra-img img{
+.run-extra-img img {
   border-radius: 18px;
 }
 
 /* Trainings and Exercises Section Style */
-.training-section{
+.training-section {
   width: 1060px;
   margin: 0 auto;
 }
-.training-section-info{
+.training-section-info {
   width: 671px;
   margin-bottom: 58px;
 }
-.training-img img{
+.training-img img {
   width: 100%;
 }
-.training-title{
+.training-title {
   font-size: 3rem;
   font-weight: bolder;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 14px;
 }
-.training-description{
+.training-description {
   font-size: 0.875re;
-  color:rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
 }
 
 .training-img-box-1 {
@@ -315,7 +327,7 @@ body {
   overflow: hidden;
 }
 
-.training-img img{
+.training-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -332,10 +344,10 @@ body {
   border-radius: 4px;
   font-size: 14px;
 }
-.training-img-name-3{
+.training-img-name-3 {
   position: absolute;
   bottom: 5px;
-  left:20px;
+  left: 20px;
   bottom: 12px;
   color: white;
   background-color: rgba(0, 0, 0, 0.5);
@@ -344,7 +356,7 @@ body {
   font-size: 14px;
   width: 176px;
 }
-.training-img-name-4{
+.training-img-name-4 {
   position: absolute;
   bottom: 5px;
   left: 230px;
@@ -361,7 +373,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 
 .training-img::after {
   content: "";
@@ -383,7 +394,6 @@ body {
   z-index: 0;
 }
 
-
 .img-1::after {
   background-color: rgba(6, 255, 210, 0.5);
 }
@@ -403,6 +413,151 @@ body {
 }
 .img-6::after {
   background-color: rgba(0, 71, 255, 0.3);
+}
+
+/* Meet Our Team Section Style */
+.our-team {
+  width: 1060px;
+  margin: 0 auto;
+}
+.our-team-container {
+  margin-bottom: 58px;
+}
+.our-team-info {
+  justify-items: center;
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 58px;
+}
+.our-team-title {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #ffffff;
+  margin-top: 100px;
+}
+.our-team-description {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.our-team-img-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  background: #121212;
+  border-radius: 16px;
+}
+
+.our-team-img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.trainer-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.our-team-img-box:hover .trainer-img {
+  transform: scale(1.05);
+}
+
+.our-team-img-ifo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: white;
+}
+
+.trainer-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.trainer-deg {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/*  Footer Section Style*/
+.footer{
+  background: linear-gradient(
+    to bottom,
+    #111111 0%,
+    #272727 50%,
+    #272727 50%,
+    #111111 100%
+  );
+  margin-top: 58px;
+}
+.footer-container{
+  max-width: 1059px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: self-start;
+}
+.fitness{
+  max-width: 443px;
+  margin-top: 52px;
+}
+.fitness-title{
+  font-size: 4.375rem;
+  font-weight: bolder;
+  color: #e6533c;
+}
+.fitness-description{
+  font: size 0.875rem ;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.5;
+}
+.get-started{
+  margin-bottom: 30px;
+}
+.get-started-title{
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom:30px;
+  margin-top: 66px;
+  
+}
+.get-started-links{
+  list-style: none;
+}
+.get-started-links li {
+  margin-bottom: 20px;
+}
+.get-started-link{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.get-started-link:hover{
+  color: #e6533c;
+}
+
+.footer-border{
+  max-width: 1045px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+}
+
+.all-right{
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 36px;
 }
 
 
@@ -452,50 +607,76 @@ body {
     bottom: 60px;
   }
   /* Change Your Habits Section Style */
-  .change-habits-card{
+  .change-habits-card {
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
-  .change-habits-info{
+  .change-habits-info {
     max-width: 318px;
   }
-  .change-habits-title{
-    font-size:2rem ;
+  .change-habits-title {
+    font-size: 2rem;
   }
   /* Run an Extra Mile Easily Section Style */
-  .run-extra-section{
+  .run-extra-section {
     max-width: 353px;
   }
-  .run-extra-container{
+  .run-extra-container {
     flex-direction: column;
   }
-  .run-extra-img img{
+  .run-extra-img img {
     width: 100%;
   }
   /* Trainings and Exercises Section Style */
-  .training-section{
+  .training-section {
     width: 353px;
   }
-  .training-section-info{
+  .training-section-info {
     width: 353px;
   }
-  .training-section-info{
+  .training-section-info {
     width: 353px;
   }
-  .training-img-box-1{
-    width: 353px;
-    display: flex;
-  }
-  .img-3{
-    display: none;
-  }
-  .training-img-box-2{
+  .training-img-box-1 {
     width: 353px;
     display: flex;
   }
-  .img-6{
+  .img-3 {
     display: none;
   }
-
+  .training-img-box-2 {
+    width: 353px;
+    display: flex;
+  }
+  .img-6 {
+    display: none;
+  }
+  /* Meet Our Team Section Style */
+  .our-team {
+    max-width: 353px;
+  }
+  .our-team-title {
+    font-size: 2rem;
+  }
+  .our-team-img-container {
+    margin: 0 0;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #img-1,
+  #img-4 {
+    display: none;
+  }
+  /*  Footer Section Style*/
+  .footer{
+    margin-top: 20px;
+  }
+  .footer-container{
+    flex-direction: column;
+    justify-content:space-around;
+    max-width: 353px;
+  }
+  .margin-1{
+    margin-top: 0px;
+  }
 }
