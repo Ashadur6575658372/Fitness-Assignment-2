@@ -185,7 +185,7 @@ body {
 
 /* Change Your Habits Section Style */
 .change-habits-section {
-  max-width: 1440px;
+  max-width: 1060px;
   margin: 0 auto;
   margin-top: 100px;
 }
@@ -229,8 +229,181 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* Run an Extra Mile Easily Section Style */
+.run-extra-section{
+  width: 1060px;
+  margin: 0 auto;
+  background-color: #222222;
+  border-radius: 18px;
+}
+.run-extra-container{
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 130px;
+  margin-bottom: 100px;
+}
+.run-extra-info{
+  max-width: 443px;
+  padding: 40px 54px;
+}
+.run-extra-title{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+.run-extra-description{
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 34px;
+}
+.join-now-btn{
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #e6533c;
+  padding:16px 70px;
+  border: none;
+  border-radius: 42px;
+  cursor: pointer;
+}
+.run-extra-img{
+  padding: 30px 32px;
+}
+.run-extra-img img{
+  border-radius: 18px;
+}
+
+/* Trainings and Exercises Section Style */
+.training-section{
+  width: 1060px;
+  margin: 0 auto;
+}
+.training-section-info{
+  width: 671px;
+  margin-bottom: 58px;
+}
+.training-img img{
+  width: 100%;
+}
+.training-title{
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+.training-description{
+  font-size: 0.875re;
+  color:rgba(255, 255, 255, 0.5);
+}
+
+.training-img-box-1 {
+  width: 1060px;
+  height: 201.5px;
+  display: grid;
+  grid-template-columns: 250px 520px 290px;
+}
+.training-img-box-2 {
+  width: 1060px;
+  height: 201.5px;
+  display: grid;
+  grid-template-columns: 425px 288px 347px;
+}
+
+.training-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.training-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.training-img-name {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.training-img-name-3{
+  position: absolute;
+  bottom: 5px;
+  left:20px;
+  bottom: 12px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 176px;
+}
+.training-img-name-4{
+  position: absolute;
+  bottom: 5px;
+  left: 230px;
+  bottom: 140px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 176px;
+}
+
+.training-img {
+  position: relative;
+  overflow: hidden;
+}
 
 
+.training-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.training-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  z-index: 0;
+}
+
+
+.img-1::after {
+  background-color: rgba(6, 255, 210, 0.5);
+}
+
+.img-2::after {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+.img-3::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.img-4::after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.img-5::after {
+  background-color: rgba(66, 255, 0, 0.3);
+}
+.img-6::after {
+  background-color: rgba(0, 71, 255, 0.3);
+}
 
 
 
@@ -290,4 +463,39 @@ body {
   .change-habits-title{
     font-size:2rem ;
   }
+  /* Run an Extra Mile Easily Section Style */
+  .run-extra-section{
+    max-width: 353px;
+  }
+  .run-extra-container{
+    flex-direction: column;
+  }
+  .run-extra-img img{
+    width: 100%;
+  }
+  /* Trainings and Exercises Section Style */
+  .training-section{
+    width: 353px;
+  }
+  .training-section-info{
+    width: 353px;
+  }
+  .training-section-info{
+    width: 353px;
+  }
+  .training-img-box-1{
+    width: 353px;
+    display: flex;
+  }
+  .img-3{
+    display: none;
+  }
+  .training-img-box-2{
+    width: 353px;
+    display: flex;
+  }
+  .img-6{
+    display: none;
+  }
+
 }
